@@ -1,0 +1,62 @@
+/*
+ * #EDEAC0
+ * #433E0E
+ * #7C9082 / #5B695F
+ * #A7A284
+ * #D0C88E
+ */
+* {
+  box-sizing: border-box;
+
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 24px;
+  background-color: #EDEAC0;
+  color: #433E0E;
+}
+a { color: #7C9082; }
+a:hover { color: #5B695F; }
+
+
+.controls {
+  position: fixed;
+  bottom: 8px;
+  left: 50%;
+  margin: 0 0 0 -96px;
+  width: 192px;
+  font-size: 0;
+}
+
+.control-button {
+  font-size: 16px;
+  background: #A7A284;
+  padding: 8px;
+  width: 92px;
+  color: #D0C88E;
+  border-radius: 8px;
+  border-style: none;
+}
+.control-button:hover {
+  cursor: pointer;
+}
+
+.control-button:not(:last-child) {
+  margin-right: 8px;
+}
+
+.slide {
+  width: 100%;
+  padding: 32px;
+}
+
+.slide-title {
+  margin: 0 0 32px 0;
+}
+
+.slide.cover-slide {
+  text-align: center;
+}
+

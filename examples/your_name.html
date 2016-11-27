@@ -1,0 +1,28 @@
+<html lang="ja">
+  <head>
+    <title>はじめてのWebページ</title>
+    <style>
+      .title {
+        font-size: 24px;
+        font-weight: bold;
+        color: #333333;
+      }
+      .greetings {
+        font-size: 18px;
+      }
+      .name {
+        color: #FF6666;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="title">ごあいさつ</h1>
+    <p class="greetings">こんにちは、<span class="name">世界</span>！</p>
+    <script>
+      var yourName = window.prompt('あなたのお名前は？');
+      var nameElement = document.querySelector('.name');
+      nameElement.innerText = yourName;
+    </script>
+  </body>
+</html>

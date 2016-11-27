@@ -1,0 +1,26 @@
+<html lang="ja">
+  <head>
+    <title>おみくじ</title>
+  </head>
+  <body>
+    <button class="omikuji-button">おみくじを引く</button>
+    <div class="result">ここに結果が表示されます</div>
+    <script>
+      var omikujiButton = document.querySelector('.omikuji-button');
+      var resultElement = document.querySelector('.result');
+      omikujiButton.addEventListener('click', function(){
+        // おみくじボタンをクリックするとここが実行される
+        var score = Math.floor(Math.random() * 10); // scoreに0から9の整数が代入される
+        var result = '';
+        if (score === 9) {
+          result = '大吉です';
+        } else if (score > 2) {
+          result = '吉です';
+        } else {
+          result = '凶です';
+        }
+        resultElement.innerText = result;
+      });
+    </script>
+  </body>
+</html>

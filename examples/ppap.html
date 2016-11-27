@@ -1,0 +1,61 @@
+<html lang="ja">
+  <head>
+    <title>PPAP</title>
+  </head>
+  <body>
+    <div>I have...</div>
+    <div>
+      <label>
+        <input type="checkbox" class="have-pen"> ペン(pen)
+      </label>
+    </div>
+    <div>
+      <label>
+        <input type="checkbox" class="have-apple"> アッポー(apple)
+      </label>
+    </div>
+    <div>
+      <label>
+        <input type="checkbox" class="have-pineapple"> パイナッポー(pineapple)
+      </label>
+    </div>
+    <div>
+      <button class="ummm">Ummm!!</button>
+    </div>
+    <div class="result"></div>
+    <div class="result-en"></div>
+    <script>
+      var ummmButton = document.querySelector('.ummm');
+      var resultElement = document.querySelector('.result');
+      var resultEnElement = document.querySelector('.result-en');
+      ummmButton.addEventListener('click', function(){
+
+        var results = [];
+        var resultsEn = [];
+
+        var havePen = document.querySelector('.have-pen').checked;
+        var haveApple = document.querySelector('.have-apple').checked;
+        var havePineapple = document.querySelector('.have-pineapple').checked;
+
+        if (havePen && haveApple && havePineapple) {
+          results.push('ペン');
+          resultsEn.push('Pen');
+        }
+        if (havePineapple) {
+          results.push('パイナッポー');
+          resultsEn.push('Pineapple');
+        }
+        if (haveApple) {
+          results.push('アッポー');
+          resultsEn.push('Apple');
+        }
+        if (havePen) {
+          results.push('ペン');
+          resultsEn.push('Pen');
+        }
+        resultElement.innerText = results.join('')
+        resultEnElement.innerText = resultsEn.join('-');
+      });
+    </script>
+  </body>
+</html>
