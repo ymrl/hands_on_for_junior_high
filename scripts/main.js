@@ -3,9 +3,10 @@ var slideIndex = 0;
 function showSlide(idx){
   var slides = document.querySelectorAll('.slide')
   if (idx >= 0 && idx < slides.length) {
-    slides.forEach(function(elm, i) {
+    for (var i = 0; i < slides.length; i++) {
+      var elm = slides[i];
       elm.style.display = i === idx ? 'block' : 'none';
-    });
+    }
     slideIndex = idx;
     if (idx === 0) {
       history.replaceState('', '', location.pathname);
