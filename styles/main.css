@@ -60,3 +60,10 @@ a:hover { color: #5B695F; }
   text-align: center;
 }
 
+.slide-body.photos-4 {
+  font-size: 0;
+}
+.slide-body.photos-4 img{
+  width: 50%;
+  height: auto;
+}
