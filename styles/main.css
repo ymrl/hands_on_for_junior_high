@@ -24,9 +24,7 @@ a:hover { color: #5B695F; }
 .controls {
   position: fixed;
   bottom: 8px;
-  left: 50%;
-  margin: 0 0 0 -96px;
-  width: 192px;
+  right: 8px;
   font-size: 0;
 }
 
@@ -39,7 +37,16 @@ a:hover { color: #5B695F; }
   border-radius: 8px;
   border-style: none;
 }
-.control-button:hover {
+
+.print-button {
+  font-size: 16px;
+  background: none;
+  color: #D0C88E;
+  border-style: none;
+  margin-right: 8px;
+}
+
+.print-button:hover, .control-button:hover {
   cursor: pointer;
 }
 

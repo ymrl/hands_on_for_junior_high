@@ -1,0 +1,14 @@
+.controls {
+  display: none;
+}
+body {
+  font-size: 11px;
+  color: #000;
+  background: #fff;
+}
+.slide {
+  padding: 0 24px 24px 24px;
+}
+.slide-title {
+  margin: 0 0 8px 0;
+}

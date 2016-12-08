@@ -24,6 +24,14 @@ function prevSlide() {
   showSlide(slideIndex - 1);
 }
 
+function printView() {
+  var slides = document.querySelectorAll('.slide')
+  for (var i = 0; i < slides.length; i++) {
+    var elm = slides[i];
+    elm.style.display = 'block';
+  }
+}
+
 window.addEventListener('load', function() {
   var initialSlide = 0;
   var matched = location.hash.match(/^#(\d+)$/);
@@ -31,6 +39,7 @@ window.addEventListener('load', function() {
     initialSlide = Number(matched[1]);
   }
   showSlide(initialSlide);
+  document.querySelector('#print-button').addEventListener('click', function(){ printView(); });
   document.querySelector('#next-button').addEventListener('click', function(){ nextSlide(); });
   document.querySelector('#prev-button').addEventListener('click', function(){ prevSlide(); });
   window.addEventListener('keydown', function(e){
