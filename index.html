@@ -234,16 +234,15 @@
     <section class="slide">
       <h1 class="slide-title">Webページを作る</h1>
       <div class="slide-body">
-        <pre>
-&lt;html lang="ja"&gt;
-  &lt;head&gt;
-    &lt;title&gt;はじめてのWebページ&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;こんにちは、世界！&lt;/p&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-        </pre>
+<pre class="hl"><span class="hl kwa">&lt;html</span> <span class="hl kwb">lang</span>=<span class="hl str">&quot;ja&quot;</span><span class="hl kwa">&gt;</span>
+  <span class="hl kwa">&lt;head&gt;</span>
+    <span class="hl kwa">&lt;title&gt;</span>はじめてのWebページ<span class="hl kwa">&lt;/title&gt;</span>
+  <span class="hl kwa">&lt;/head&gt;</span>
+  <span class="hl kwa">&lt;body&gt;</span>
+    <span class="hl kwa">&lt;p&gt;</span>こんにちは、世界！<span class="hl kwa">&lt;/p&gt;</span>
+  <span class="hl kwa">&lt;/body&gt;</span>
+<span class="hl kwa">&lt;/html&gt;</span>
+</pre>
         <ul>
           <li>メモ帳に上の内容を写しましょう（写経）
             <ul>
@@ -283,31 +282,30 @@
     <section class="slide">
       <h1 class="slide-title">ちょっと派手にしてみる</h1>
       <div class="slide-body">
-      <pre>
-&lt;html lang="ja"&gt;
-  &lt;head&gt;
-    &lt;title&gt;はじめてのWebページ&lt;/title&gt;
-    <strong>&lt;style&gt;
+<pre class="hl"><span class="hl kwa">&lt;html</span> <span class="hl kwb">lang</span>=<span class="hl str">&quot;ja&quot;</span><span class="hl kwa">&gt;</span>
+  <span class="hl kwa">&lt;head&gt;</span>
+    <span class="hl kwa">&lt;title&gt;</span>はじめてのWebページ<span class="hl kwa">&lt;/title&gt;</span>
+    <span class="hl kwa">&lt;style&gt;</span>
       .title {
-        font-size: 24px;
+        font-size: <span class="hl num">24</span>px;
         font-weight: bold;
-        color: #333333;
+        color: #<span class="hl num">333333</span>;
       }
       .greetings {
-        font-size: 18px;
+        font-size: <span class="hl num">18</span>px;
       }
       .name {
         color: #FF6666;
         font-weight: bold;
       }
-    &lt;/style&gt;</strong>
-  &lt;/head&gt;
-  &lt;body&gt;
-    <strong>&lt;h1 class="title"&gt;ごあいさつ&lt;/h1&gt;</strong>
-    &lt;p <strong>class="greetings"&gt;</strong>こんにちは、<strong>&lt;span class="name"&gt;</strong>世界<strong>&lt;/span&gt;</strong>！&lt;/p&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-        </pre>
+    <span class="hl kwa">&lt;/style&gt;</span>
+  <span class="hl kwa">&lt;/head&gt;</span>
+  <span class="hl kwa">&lt;body&gt;</span>
+    <span class="hl kwa">&lt;h1</span> <span class="hl kwb">class</span>=<span class="hl str">&quot;title&quot;</span><span class="hl kwa">&gt;</span>ごあいさつ<span class="hl kwa">&lt;/h1&gt;</span>
+    <span class="hl kwa">&lt;p</span> <span class="hl kwb">class</span>=<span class="hl str">&quot;greetings&quot;</span><span class="hl kwa">&gt;</span>こんにちは、<span class="hl kwa">&lt;span</span> <span class="hl kwb">class</span>=<span class="hl str">&quot;name&quot;</span><span class="hl kwa">&gt;</span>世界<span class="hl kwa">&lt;/span&gt;</span>！<span class="hl kwa">&lt;/p&gt;</span>
+  <span class="hl kwa">&lt;/body&gt;</span>
+<span class="hl kwa">&lt;/html&gt;</span>
+</pre>
         <ul>
           <li><a href="examples/hello_with_css.html">hello_with_css.html</a></li>
         </ul>
@@ -328,12 +326,11 @@
     <section class="slide">
       <h1 class="slide-title">プログラミングしてみよう</h1>
       <div class="slide-body">
-        <pre>
-&lt;script&gt;
-  var yourName = window.prompt('あなたのお名前は？');
-  var nameElement = document.querySelector('.name');
-  nameElement.innerText = yourName;
-&lt;/script&gt;
+        <pre class="hl"><span class="hl kwa">&lt;script&gt;</span>
+  <span class="hl kwa">var</span> yourName <span class="hl opt">=</span> window<span class="hl opt">.</span><span class="hl kwd">prompt</span><span class="hl opt">(</span><span class="hl str">'あなたのお名前は？'</span><span class="hl opt">);</span>
+  <span class="hl kwa">var</span> nameElement <span class="hl opt">=</span> document<span class="hl opt">.</span><span class="hl kwd">querySelector</span><span class="hl opt">(</span><span class="hl str">'.name'</span><span class="hl opt">);</span>
+  nameElement<span class="hl opt">.</span>innerText <span class="hl opt">=</span> yourName<span class="hl opt">;</span>
+<span class="hl kwa">&lt;/script&gt;</span>
         </pre>
         <ul>
           <li>上記を、さきほどの例の<code>&lt;/body&gt;</code>の直前に書きましょう</li>
@@ -414,16 +411,15 @@
     <section class="slide">
       <h1 class="slide-title">おみくじを作ろう(1)</h1>
       <div class="slide-body">
-        <pre>
-&lt;html lang="ja"&gt;
-  &lt;head&gt;
-    &lt;title&gt;おみくじ&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;button class="omikuji-button"&gt;おみくじを引く&lt;/button&gt;
-    &lt;div class="result"&gt;ここに結果が表示されます&lt;/div&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
+<pre class="hl"><span class="hl kwa">&lt;html</span> <span class="hl kwb">lang</span>=<span class="hl str">&quot;ja&quot;</span><span class="hl kwa">&gt;</span>
+  <span class="hl kwa">&lt;head&gt;</span>
+    <span class="hl kwa">&lt;title&gt;</span>おみくじ<span class="hl kwa">&lt;/title&gt;</span>
+  <span class="hl kwa">&lt;/head&gt;</span>
+  <span class="hl kwa">&lt;body&gt;</span>
+    <span class="hl kwa">&lt;button</span> <span class="hl kwb">class</span>=<span class="hl str">&quot;omikuji-button&quot;</span><span class="hl kwa">&gt;</span>おみくじを引く<span class="hl kwa">&lt;/button&gt;</span>
+    <span class="hl kwa">&lt;div</span> <span class="hl kwb">class</span>=<span class="hl str">&quot;result&quot;</span><span class="hl kwa">&gt;</span>ここに結果が表示されます<span class="hl kwa">&lt;/div&gt;</span>
+  <span class="hl kwa">&lt;/body&gt;</span>
+<span class="hl kwa">&lt;/html&gt;</span>
         </pre>
         <ul>
           <li><a href="examples/omikuji1.html">omikuji1.html</a></li>
@@ -434,24 +430,23 @@
     <section class="slide">
       <h1 class="slide-title">おみくじを作ろう(1)</h1>
       <div class="slide-body">
-        <pre>
-&lt;script&gt;
-  var omikujiButton = document.querySelector('.omikuji-button');
-  var resultElement = document.querySelector('.result');
-  omikujiButton.addEventListener('click', function(){
-    // おみくじボタンをクリックするとここが実行される
-    var score = Math.floor(Math.random() * 10); // scoreに0から9の整数が代入される
-    var result = '';
-    if (score === 9) {
-      result = '大吉です';
-    } else if (score &gt; 2) {
-      result = '吉です';
-    } else {
-      result = '凶です';
-    }
-    resultElement.innerText = result;
-  });
-&lt;/script&gt;
+<pre class="hl"><span class="hl kwa">&lt;script&gt;</span>
+  <span class="hl kwa">var</span> omikujiButton <span class="hl opt">=</span> document<span class="hl opt">.</span><span class="hl kwd">querySelector</span><span class="hl opt">(</span><span class="hl str">'.omikuji-button'</span><span class="hl opt">);</span>
+  <span class="hl kwa">var</span> resultElement <span class="hl opt">=</span> document<span class="hl opt">.</span><span class="hl kwd">querySelector</span><span class="hl opt">(</span><span class="hl str">'.result'</span><span class="hl opt">);</span>
+  omikujiButton<span class="hl opt">.</span><span class="hl kwd">addEventListener</span><span class="hl opt">(</span><span class="hl str">'click'</span><span class="hl opt">,</span> <span class="hl kwa">function</span><span class="hl opt">(){</span>
+    <span class="hl slc">// おみくじボタンをクリックするとここが実行される</span>
+    <span class="hl kwa">var</span> score <span class="hl opt">=</span> Math<span class="hl opt">.</span><span class="hl kwd">floor</span><span class="hl opt">(</span>Math<span class="hl opt">.</span><span class="hl kwd">random</span><span class="hl opt">() *</span> <span class="hl num">10</span><span class="hl opt">);</span> <span class="hl slc">// scoreに0から9の整数が代入される</span>
+    <span class="hl kwa">var</span> result <span class="hl opt">=</span> <span class="hl str">''</span><span class="hl opt">;</span>
+    <span class="hl kwa">if</span> <span class="hl opt">(</span>score <span class="hl opt">===</span> <span class="hl num">9</span><span class="hl opt">) {</span>
+      result <span class="hl opt">=</span> <span class="hl str">'大吉です'</span><span class="hl opt">;</span>
+    <span class="hl opt">}</span> <span class="hl kwa">else if</span> <span class="hl opt">(</span>score <span class="hl opt">&gt;</span> <span class="hl num">2</span><span class="hl opt">) {</span>
+      result <span class="hl opt">=</span> <span class="hl str">'吉です'</span><span class="hl opt">;</span>
+    <span class="hl opt">}</span> <span class="hl kwa">else</span> <span class="hl opt">{</span>
+      result <span class="hl opt">=</span> <span class="hl str">'凶です'</span><span class="hl opt">;</span>
+    <span class="hl opt">}</span>
+    resultElement<span class="hl opt">.</span>innerText <span class="hl opt">=</span> result<span class="hl opt">;</span>
+  <span class="hl opt">});</span>
+<span class="hl kwa">&lt;/script&gt;</span>
         </pre>
         <ul>
           <li><a href="examples/omikuji2.html">omikuji2.html</a></li>
@@ -473,7 +468,7 @@
     </section>
 
     <section class="slide">
-      <h1 class="slide-title">HTMLで使えそうな機能</h1>
+      <h1 class="slide-title">HTMLタグのヒント</h1>
       <div class="slide-body">
         <ul>
           <li>画像を表示する <code>&lt;img src="画像ファイル名"&gt;</code></li>
@@ -520,22 +515,28 @@ time.getSeconds(); // 22
     <section class="slide">
       <h1 class="slide-title">(おまけ) PPAP</h1>
       <div class="slide-body">
-        <pre>
-&lt;div&gt;I have...&lt;/div&gt;
-&lt;div&gt;
-  &lt;label&gt;&lt;input type="checkbox" class="have-pen"&gt; ペン(pen)&lt;/label&gt;
-&lt;/div&gt;
-&lt;div&gt;
-  &lt;label&gt;&lt;input type="checkbox" class="have-apple"&gt; アッポー(apple)&lt;/label&gt;
-&lt;/div&gt;
-&lt;div&gt;
-  &lt;label&gt;&lt;input type="checkbox" class="have-pineapple"&gt; パイナッポー(pineapple)&lt;/label&gt;
-&lt;/div&gt;
-&lt;div&gt;
-  &lt;button class="ummm"&gt;Ummm!!&lt;/button&gt;
-&lt;/div&gt;
-&lt;div class="result"&gt;&lt;/div&gt;
-&lt;div class="result-en"&gt;&lt;/div&gt;</pre>
+<pre class="hl"><span class="hl kwa">&lt;div&gt;</span>I have...<span class="hl kwa">&lt;/div&gt;</span>
+<span class="hl kwa">&lt;div&gt;</span>
+  <span class="hl kwa">&lt;label&gt;</span>
+    <span class="hl kwa">&lt;input</span> <span class="hl kwb">type</span>=<span class="hl str">&quot;checkbox&quot;</span> <span class="hl kwb">class</span>=<span class="hl str">&quot;have-pen&quot;</span><span class="hl kwa">&gt;</span> ペン(pen)
+  <span class="hl kwa">&lt;/label&gt;</span>
+<span class="hl kwa">&lt;/div&gt;</span>
+<span class="hl kwa">&lt;div&gt;</span>
+  <span class="hl kwa">&lt;label&gt;</span>
+    <span class="hl kwa">&lt;input</span> <span class="hl kwb">type</span>=<span class="hl str">&quot;checkbox&quot;</span> <span class="hl kwb">class</span>=<span class="hl str">&quot;have-apple&quot;</span><span class="hl kwa">&gt;</span> アッポー(apple)
+  <span class="hl kwa">&lt;/label&gt;</span>
+<span class="hl kwa">&lt;/div&gt;</span>
+<span class="hl kwa">&lt;div&gt;</span>
+  <span class="hl kwa">&lt;label&gt;</span>
+    <span class="hl kwa">&lt;input</span> <span class="hl kwb">type</span>=<span class="hl str">&quot;checkbox&quot;</span> <span class="hl kwb">class</span>=<span class="hl str">&quot;have-pineapple&quot;</span><span class="hl kwa">&gt;</span> パイナッポー(pineapple)
+  <span class="hl kwa">&lt;/label&gt;</span>
+<span class="hl kwa">&lt;/div&gt;</span>
+<span class="hl kwa">&lt;div&gt;</span>
+  <span class="hl kwa">&lt;button</span> <span class="hl kwb">class</span>=<span class="hl str">&quot;ummm&quot;</span><span class="hl kwa">&gt;</span>Ummm!!<span class="hl kwa">&lt;/button&gt;</span>
+<span class="hl kwa">&lt;/div&gt;</span>
+<span class="hl kwa">&lt;div</span> <span class="hl kwb">class</span>=<span class="hl str">&quot;result&quot;</span><span class="hl kwa">&gt;&lt;/div&gt;</span>
+<span class="hl kwa">&lt;div</span> <span class="hl kwb">class</span>=<span class="hl str">&quot;result-en&quot;</span><span class="hl kwa">&gt;&lt;/div&gt;</span>
+        </pre>
         <ul>
           <li><a href="examples/ppap.html">ppap.html</a></li>
         </ul>
